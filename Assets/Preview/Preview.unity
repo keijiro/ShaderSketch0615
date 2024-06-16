@@ -159,7 +159,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: -876546973899608171, guid: d0a57d4fafaee46d49e97b9b19660eee, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -305,7 +305,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 45
   m_Range: 10
-  m_SpotAngle: 30
+  m_SpotAngle: 50
   m_InnerSpotAngle: 0
   m_CookieSize: 10
   m_Shadows:
@@ -512,7 +512,7 @@ Light:
   m_Color: {r: 0.8867924, g: 0, b: 0.23567094, a: 1}
   m_Intensity: 15
   m_Range: 10
-  m_SpotAngle: 30
+  m_SpotAngle: 50
   m_InnerSpotAngle: 0
   m_CookieSize: 10
   m_Shadows:
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
-  m_Antialiasing: 0
+  m_Antialiasing: 3
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 1
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_Version: 2
   m_TaaSettings:
     m_Quality: 3
-    m_FrameInfluence: 0.1
+    m_FrameInfluence: 0.100000024
     m_JitterScale: 1
     m_MipBias: 0
     m_VarianceClampScale: 0.9
