@@ -488,7 +488,7 @@
     "m_SourceType": 1,
     "m_FunctionName": "TextureConverter",
     "m_FunctionSource": "",
-    "m_FunctionBody": "float s1 =  tex2D(Tex, UV).r;\nfloat s2 =  tex2D(Tex, UV + float2(0.5, 0.0)).r;\nfloat s3 =  tex2D(Tex, UV + float2(0.0, 0.5)).r;\nfloat s4 =  tex2D(Tex, UV + float2(0.5, 0.5)).r;\nfloat h = saturate(s1 +s2 + s3 + s4);\nfloat3 v = float3(ddx_fine(h), ddy_fine(h), 1 - Bumpiness);\nfloat3  rgb = normalize(v) * 0.5 + 0.5;\nfloat3 n = SRGBToLinear(rgb);\nOutput = Debug ? 1 - h : n;"
+    "m_FunctionBody": "float s1 =  tex2D(Tex, UV).r;\nfloat s2 =  tex2D(Tex, UV + float2(0.5, 0.0)).r;\nfloat s3 =  tex2D(Tex, UV + float2(0.0, 0.5)).r;\nfloat s4 =  tex2D(Tex, UV + float2(0.5, 0.5)).r;\nfloat h = saturate(s1 +s2 + s3 + s4);\n#if SHADER_TARGET < 40\nfloat3 v = float3(ddx(h), ddy(h), 1 - Bumpiness);\n#else\nfloat3 v = float3(ddx_fine(h), ddy_fine(h), 1 - Bumpiness);\n#endif\nfloat3  rgb = normalize(v) * 0.5 + 0.5;\nfloat3 n = SRGBToLinear(rgb);\nOutput = Debug ? 1 - h : n;"
 }
 
 {
