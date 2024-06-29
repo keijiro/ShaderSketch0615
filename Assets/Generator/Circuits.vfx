@@ -6,7 +6,7 @@ VisualEffectResource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Generator
+  m_Name: Circuits
   m_Graph: {fileID: 114350483966674976}
   m_Infos:
     m_RendererSettings:
@@ -33,7 +33,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d4c867f6b72b714dbb5fd1780afe208, type: 3}
-  m_Name: Generator
+  m_Name: Circuits
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 0}
@@ -166,9 +166,9 @@ MonoBehaviour:
   uiBounds:
     serializedVersion: 2
     x: -502
-    y: 358
+    y: 0
     width: 3088
-    height: 2814
+    height: 3172
 --- !u!114 &114350483966674978
 MonoBehaviour:
   m_ObjectHideFlags: 0
